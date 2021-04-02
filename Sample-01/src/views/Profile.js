@@ -26,6 +26,9 @@ export const ProfileComponent = () => {
       <Row>
         <Highlight>{JSON.stringify(user, null, 2)}</Highlight>
       </Row>
+      <Row>
+        <p>We can synchronize this information with Active Campaign, and tag them based on their actions from this point forward.</p>
+      </Row>
     </Container>
   );
 };
