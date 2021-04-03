@@ -4,6 +4,9 @@ import { Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import freeholdData from "../utils/freeholdData";
+import { Signin } from "../components/signIn";
+import { userSession } from "../utils/auth"
+import Wallet from "../components/Wallet"
 
 class Freehold extends Component {
   render() {
@@ -20,6 +23,7 @@ class Freehold extends Component {
                 </a>
               </h6>
               <p>{col.description}</p>
+              {(col.login) ? userSession.isUserSignedIn() ? <Wallet /> : <Signin /> : <p>Not integrated yet</p>}
             </Col>
           ))}
         </Row>
