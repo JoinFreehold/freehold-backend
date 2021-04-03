@@ -1,1 +1,6 @@
-{}
+{
+  "dependencies": {
+    "@stacks/connect": "^5.0.5",
+    "@stacks/connect-react": "^5.0.5"
+  }
+}

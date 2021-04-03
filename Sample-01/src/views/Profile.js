@@ -5,6 +5,8 @@ import Highlight from "../components/Highlight";
 import Loading from "../components/Loading";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 
+import Freehold from "../components/Freehold";
+
 export const ProfileComponent = () => {
   const { user } = useAuth0();
 
@@ -28,6 +30,9 @@ export const ProfileComponent = () => {
       </Row>
       <Row>
         <p>We can synchronize this information with Active Campaign, and tag them based on their actions from this point forward.</p>
+      </Row>
+      <Row>
+        <Freehold />
       </Row>
     </Container>
   );
