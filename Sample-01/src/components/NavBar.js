@@ -53,6 +53,18 @@ const NavBar = () => {
                   Home
                 </NavLink>
               </NavItem>
+              {isAuthenticated && (
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/stx-freehold"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    STX Freehold
+                  </NavLink>
+                </NavItem>
+              )}
             </Nav>
             <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (

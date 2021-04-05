@@ -1,7 +1,7 @@
 const freeholdData = [
   {
     title: "STX Freehold",
-    link: "https://auth0.com/docs/connections",
+    link: "/stx-freehold",
     login: true,
     description:
       "Where this idea came to life, and the beginning of an amazing new opportunity."

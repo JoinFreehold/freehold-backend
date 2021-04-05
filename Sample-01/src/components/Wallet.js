@@ -17,6 +17,7 @@ const Wallet = () => (
   <div>
     <Avatar />
     <p><FontAwesomeIcon icon="user" /> STX Wallet Connected</p>
+    <p>{console.log(person.walletAddress)}</p>
     <p>
       <button onClick={() => {
           // window.location = 'https://joinfreehold.com/stx-challenges'
