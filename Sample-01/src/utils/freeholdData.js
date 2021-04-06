@@ -4,7 +4,7 @@ const freeholdData = [
     link: "/stx-freehold",
     login: true,
     description:
-      "Where this idea came to life, and the beginning of an amazing new opportunity."
+      "Users have the opportunity to submit their onboarding task and review status here until accepted."
   },
   {
     title: "ABC Freehold",

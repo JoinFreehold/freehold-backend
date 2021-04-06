@@ -12,12 +12,6 @@ const contentData = [
       "Since this is our main CRM and how we communicate with Freeholders, we can leverage it and keep the data where it should be."
   },
   {
-    title: "Implement cool features",
-    link: "https://auth0.com/docs/anomaly-detection",
-    description:
-      "Auth0 has a ton of extras, like detecting anomalies and stopping malicious attempts to access your application. Anomaly detection can alert you and your users of suspicious activity, as well as block further login attempts."
-  },
-  {
     title: "Separate Freehold from STX Freehold",
     link: "https://auth0.com/docs/rules",
     description:

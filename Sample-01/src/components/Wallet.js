@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "reactstrap";
 import { getPerson, userSession } from "../utils/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -19,15 +20,15 @@ const Wallet = () => (
     <p><FontAwesomeIcon icon="user" /> STX Wallet Connected</p>
     <p>{console.log(person.walletAddress)}</p>
     <p>
-      <button onClick={() => {
+      <Button outline size="lg" onClick={() => {
           // window.location = 'https://joinfreehold.com/stx-challenges'
           window.open('https://joinfreehold.com/stx-challenges', '_blank')
-      }}>Challenges</button><br />
-      <button>Hodl Chat</button><br />
-      <button onClick={() => {
+      }}>Challenges</Button>{' '}
+      <Button outline size="lg">Hodl Chat</Button>{' '}
+      <Button outline size="lg" onClick={() => {
         userSession.signUserOut();
         window.location = '/profile';
-      }}>Disconnect</button>
+      }}>Disconnect</Button>
     </p>
   </div>
 );

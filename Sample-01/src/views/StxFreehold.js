@@ -33,11 +33,18 @@ export const ProfileComponent = () => {
           <p>This is also where they can submit/track their initiation task.</p>
           <p>Once they become an "active" freeholder, they can access more.</p>
         </Col>
+        <Col>
+          <h2>Initiation Task</h2>
+          <p>Status: Incomplete / In Progress / Approved</p>
+        </Col>
       </Row>
+      <hr />
       <Row>
         <Col>
           <h1>Stacks Wallet</h1>
           <p>If the user wants to, they can connect their wallet now, and we remind them / require it when it's time for first payout.</p>
+        </Col>
+        <Col>
           {userSession.isUserSignedIn() ? <Wallet /> : <Signin />}
         </Col>
       </Row>
